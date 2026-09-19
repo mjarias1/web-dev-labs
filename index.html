@@ -1,4 +1,4 @@
-<!-- Michael Arias - Lab 2 -->
+<!-- Michael Arias - Lab 4 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,19 +7,81 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, Web!</h1>
-    <p>This is my first HTML page for this course.</p>
+    <header>
+        <h1>Hello, Web!</h1>
+        <p>A student project for Web Development I</p>
+    </header>
 
-    <h2>About This Page</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
 
-    <ul>
-      <li>Get comfortable with how to write HTML</li>
-      <li>Get comfortable with layout and styling to make a page look good</li>
-      <li>Understand Git and GitHub</li>
-    </ul>
+    <main>
+        <h2>About This Page</h2>
 
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN's HTML guide</a>
+        <ul>
+          <li>Get comfortable with how to write HTML</li>
+          <li>Get comfortable with layout and styling to make a page look good</li>
+          <li>Understand Git and GitHub</li>
+        </ul>
 
-    <img src="my-photo.jpg" alt="A photo of the Illinois Tech logo">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN's HTML guide</a>
+
+        <img src="my-photo.jpg" alt="A photo of the Illinois Tech logo">
+
+        <table>
+            <caption>My Labs Order</caption>
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Lab Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Lab 1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lab 2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lab 3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Lab 4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg"></textarea>
+
+            <label for="referral">How did you find this page?</label>
+            <select id="referral" name="referral">
+                <option value="search">Search engine</option>
+                <option value="social">Social media</option>
+                <option value="friend">A friend</option>
+            </select>
+
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Michael Arias</p>
+    </footer>
 </body>
 </html>
